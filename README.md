@@ -10,3 +10,7 @@ This application is part of a technical exercice for an internship interview.
 python exo.py [config_file] [changes_list_file]
 cat result.json
 ```
+3. Run tests
+```shell
+./tests.sh
+```

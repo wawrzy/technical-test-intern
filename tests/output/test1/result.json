@@ -1,16 +1,16 @@
 {
     "page1": {
-        "available-filters": {
-            "name-filter": {
-                "column": "name",
-                "sort": "asc"
-            }
-        },
         "initialSettings": {
-            "color": "white",
+            "color": "white", 
             "position": [
                 11
             ]
+        }, 
+        "available-filters": {
+            "name-filter": {
+                "column": "name", 
+                "sort": "asc"
+            }
         }
     }
 }

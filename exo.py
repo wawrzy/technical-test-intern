@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-import argparse
-import ast
-import json
+import argparse, ast, json, sys
 
 def getParams():
     """
@@ -61,9 +59,18 @@ def main():
 
     contentConfigFile = getFileContent(params.config_file)
     contentChangesFile = getFileContent(params.changes_list_file)
-    jsonConfig = json.loads(contentConfigFile)
 
-    newConfig = applyChanges(jsonConfig, contentChangesFile)
+    try:
+        jsonConfig = json.loads(contentConfigFile)
+    except ValueError as err:
+        print("Syntax error in config file : " + str(err))
+        sys.exit(1)
+
+    try:
+        newConfig = applyChanges(jsonConfig, contentChangesFile)
+    except SyntaxError as err:
+        print("Syntax error in changes list file : " + str(err))
+        sys.exit(1)
 
     writeFile("result.json", json.dumps(newConfig, indent=4))
 
