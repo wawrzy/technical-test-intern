@@ -8,4 +8,5 @@ This application is part of a technical exercice for an internship interview.
 2. Run application
 ```shell
 python exo.py [config_file] [changes_list_file]
+cat result.json
 ```
