@@ -1,0 +1,17 @@
+{
+    "page1": {
+        "initialSettings": {
+            "color": "white", 
+            "position": [
+                11, 
+                3
+            ]
+        }, 
+        "available-filters": {
+            "name-filter": {
+                "column": "test test", 
+                "sort": "asc"
+            }
+        }
+    }
+}

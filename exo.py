@@ -4,7 +4,6 @@ import argparse
 import ast
 import json
 
-
 def getParams():
     """
     Parse arguments
