@@ -1,4 +1,4 @@
-# technical-test-spinergie
+# technical-test-intern
 
 ## Context
 This application is part of a technical exercice for an internship interview.
